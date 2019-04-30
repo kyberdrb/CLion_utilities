@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# TODO this variable is used in utils/backup_.sh and utils/restore_.sh -> move to reset_.sh
 CLION_BACKUP_DIR=~/jetbrains_configurations_backup/clion
 
 rm -rf ${CLION_BACKUP_DIR}
@@ -7,7 +8,7 @@ rm -rf ${CLION_BACKUP_DIR}~
 mkdir -p ${CLION_BACKUP_DIR}
 
 # TODO parametrize CLion dir
-
+# TODO automatically detect CLion dir - see utils/restore_.sh
 cp -R ~/.CLion2019.1/config/codestyles ~/jetbrains_configurations_backup/codestyles
 cp -R ~/.CLion2019.1/config/fileTemplates ~/jetbrains_configurations_backup/fileTemplates
 cp -R ~/.CLion2019.1/config/keymaps ~/jetbrains_configurations_backup/keymaps
@@ -22,6 +23,6 @@ echo
 echo "******************************************"
 echo "CLion configuration has been backed up to"
 echo
-echo "$CLION_BACKUP_DIR"
+echo "~/jetbrains_configurations_backup"
 echo "******************************************"
 echo
