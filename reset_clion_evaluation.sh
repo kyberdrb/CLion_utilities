@@ -1,4 +1,8 @@
 #!/bin/bash
 
-./utils/remove_config_files_and_dirs.sh
+clear -x
+
+./utils/backup_clion_configuration.sh
+./utils/delete_config_files_and_dirs.sh
+./utils/restore_clion_configuration.sh
 

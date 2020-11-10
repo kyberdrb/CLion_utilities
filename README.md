@@ -1,0 +1,1 @@
+removing only the line from with property name '.*evl.*' in `options.xml` instead of removing the entire file [https://stackoverflow.com/questions/11641780/bash-delete-a-line-from-a-file-permanently/11641809#11641809] - Thanks `daoducminh`.
